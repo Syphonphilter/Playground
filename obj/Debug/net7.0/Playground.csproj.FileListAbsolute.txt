@@ -1,0 +1,14 @@
+/Users/syphonphilter/Projects/Playground/Playground/bin/Debug/net7.0/Playground
+/Users/syphonphilter/Projects/Playground/Playground/bin/Debug/net7.0/Playground.deps.json
+/Users/syphonphilter/Projects/Playground/Playground/bin/Debug/net7.0/Playground.runtimeconfig.json
+/Users/syphonphilter/Projects/Playground/Playground/bin/Debug/net7.0/Playground.dll
+/Users/syphonphilter/Projects/Playground/Playground/bin/Debug/net7.0/Playground.pdb
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.GeneratedMSBuildEditorConfig.editorconfig
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.AssemblyInfoInputs.cache
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.AssemblyInfo.cs
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.csproj.CoreCompileInputs.cache
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.dll
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/refint/Playground.dll
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.pdb
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/Playground.genruntimeconfig.cache
+/Users/syphonphilter/Projects/Playground/Playground/obj/Debug/net7.0/ref/Playground.dll
