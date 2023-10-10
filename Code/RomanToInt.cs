@@ -12,6 +12,7 @@ namespace Playground
             char[] splitedRomanChars = s.ToUpper().ToCharArray();
             Dictionary<string, int> romanNumDictionary = new Dictionary<string, int>
         {
+            
             {"I",1},
             {"V",5},
             {"X",10},
