@@ -3,40 +3,17 @@ using System.Collections.Generic;
 
 class Program
 {  
-    public static bool IsValid(string s) {
-    bool isvalid = false;
-    Stack<string> openParenthesis = new Stack<string>();
-    Dictionary<string,string> parenthesisDict = new Dictionary<string, string>(){
-      {"{","}"},
-      {"[","]"},
-      {"(",")"}
-    };
-    if(s.Length%2!=0){
-       return isvalid;
-    }
-    else{
-    for(int i = 0 ; i<= s.Length-1; i ++){
-        if(parenthesisDict.ContainsKey(s[i].ToString()) ){
-        openParenthesis.Push(s[i].ToString());
-        }
-        else if (openParenthesis.Count==0|| parenthesisDict[openParenthesis.Peek()]!= s[i].ToString()){
-            isvalid = false;
-            break;
-        }
-       
-        else{
-             openParenthesis.Pop(); 
-            }
-    isvalid = openParenthesis.Count==0? true :false;    
-    }
-    }
-    return isvalid;
+
+ 
+     static void Main()
+    {
+      MergeList mergeList = new MergeList();
+       List<int> list1 =  new List<int> {1,2,4,9};
+       List<int> list2 =  new List<int> {1,4,10};
+       ListNode NList1 = mergeList.ConvertToLinkedList(list1);
+       ListNode NList2 = mergeList.ConvertToLinkedList(list2);
+       mergeList.MergeTwoSortedList(NList1 ,NList2);
     }
 
-    static void Main()
-    {
-       Console.WriteLine(IsValid("()"));
-        // Create a stack of integers
-        
-    }
+   
 }
