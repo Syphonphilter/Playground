@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using Playground.Code;
 
 class Program
 {  
@@ -7,13 +9,27 @@ class Program
  
      static void Main()
     {
-      MergeList mergeList = new MergeList();
-       List<int> list1 =  new List<int> {1,2,4,9};
-       List<int> list2 =  new List<int> {1,4,10};
-       ListNode NList1 = mergeList.ConvertToLinkedList(list1);
-       ListNode NList2 = mergeList.ConvertToLinkedList(list2);
-       mergeList.MergeTwoSortedList(NList1 ,NList2);
+      int[] a = {1,1,2};
+       var y = RemoveDuplicates_(a);
+       Console.WriteLine(string.Join(",", y));
     }
+    static int RemoveDuplicates_(int[] nums)
+    {
+        int k = 1;
+        if (nums.Length == 0)
+        {
+            return 0;
+        }
 
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] != nums[i - 1])
+            {
+                nums[k++] = nums[i];
+            }
+        }
+
+        return k;
+    }
    
 }
