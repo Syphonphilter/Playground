@@ -20,5 +20,23 @@ namespace Playground.Code
 
         return k;
     }
+   static int myVersionRemoveDuplicates(int[] nums) {
+    int k = 0;
+    Dictionary<int, string> uniqueNums = new Dictionary<int, string>();
+    
+    for (int i = 0; i < nums.Length; i++) {
+        if (!uniqueNums.ContainsValue(nums[i].ToString())) {
+            uniqueNums.Add(i, nums[i].ToString());
+        }
     }
+    
+    k = uniqueNums.Keys.Count;
+
+    for (int i = uniqueNums.Count; i < nums.Length; i++) {
+        uniqueNums.Add(i, "_");
+    }
+    
+    return k;    
+    }
+}
 }
